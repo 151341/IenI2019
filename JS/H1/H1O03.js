@@ -3,16 +3,17 @@ function setup() {
   background('white');
   canvas.parent('processing');
   noLoop();
-  // colorMode(RGB,255,255,255,1);  
+  colorMode(RGB,255,255,255,1);  
 }
 
 function draw() {
   noStroke();
-  // fill(0,0,255,0.3);
-  fill('red');
+  fill(0,0,255,0.3);
+  
   rect(0,150,450,150);
-  fill('green');
   rect(0,0,150,450);
-  fill('blue');  
   rect(75,0,375,450);
+
+  fill(0,0,225,0.3);
+  ellipse(450,225);
 }
