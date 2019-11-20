@@ -7,13 +7,20 @@ function setup() {
 
 function draw() {
   // teken de grond
+ 
+  
+  noStroke();
+  fill('red');
+  rect(120,280,40,50);
+
   noStroke();
   fill('wheat');
   rect(0,350,450,100);
   // teken het huis
+
   noStroke();
-  fill('darkgrey');
-  rect(105);
+  fill('red');
+  rect(120,280,40,50);
 
   strokeWeight(5);
   stroke('darkgrey');
