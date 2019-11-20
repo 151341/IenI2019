@@ -11,7 +11,11 @@ function draw() {
   fill('wheat');
   rect(0,350,450,100);
   // teken het huis
-  strokeWeight(4);
+  noStroke();
+  fill('darkgrey');
+  rect(105);
+
+  strokeWeight(5);
   stroke('darkgrey');
   fill('lightgray');
   rect(100,280,100,100);
