@@ -1,5 +1,5 @@
 function setup() {
-  canvas = createCanvas(450,450);
+  canvas = createCanvas(500,500);
   background('silver');
   canvas.parent('processing');
   //noLoop();
@@ -8,7 +8,7 @@ function setup() {
 function draw() {
   noStroke();
   fill('steelblue');
-  ellipse(0,0,800);
+  rect(150,150,200,200);
   fill('deepskyblue');
-  ellipse(450,450,400);
+
 }
