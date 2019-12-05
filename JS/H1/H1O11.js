@@ -1,6 +1,6 @@
 var horizontaalA = 120;
 var verticaal = 170;
-var horizontaalB = 120;
+var horizontaalB = 500;
 var verticaalB = 170;
 
 function setup() {
@@ -19,8 +19,12 @@ function draw() {
   rect(0,0,width,40);
   fill('black');  
   text("Het middelpunt van de cirkel bevindt zich in [x,y] = [" + horizontaalA + "," + verticaal + "]",10,30);
+  stroke('red')
   fill('dodgerblue');
   ellipse(horizontaalA,verticaal,200);
   horizontaalA += 2;
-  ellipse(horizontaalB,verticaalB,50);
+  noStroke();
+  fill('purple')
+  ellipse(horizontaalB,verticaalB,200);
+  horizontaalB += 2;
 }
