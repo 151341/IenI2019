@@ -5,10 +5,11 @@ function setup() {
   textSize(14);
   noStroke();
   //noLoop();
+  background('lavender');
+
 }
 
 function draw() {
-  background('lavender');
   fill('black');
   text("mouseX:" + round(mouseX) + " mouseY:"+round(mouseY),10,20);
   fill('indianred');
