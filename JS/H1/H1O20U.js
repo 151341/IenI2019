@@ -21,7 +21,7 @@ function draw() {
   else {
     zoomNiveau -= 0.1;
   }
-  tekenJos(width / 2,height / 2,zoomNiveau);
+  tekenJos(width / 3,height / 2,zoomNiveau);
 }
 
 function tekenJos(x,y,s) {
