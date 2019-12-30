@@ -11,29 +11,27 @@ function setup() {
 }
 
 function draw() {
-  background('lavender');
-  fill('black');  
-  
+  if (mouseX >= 225) {
+    background = ('white');
+  }
+  else {
+    background = ('yellow');
+  }
   mouseX=constrain(mouseX,25,width - 25);
   mouseY=constrain(mouseY,25,height - 25);
-
-  text("Beweeg de muis | x = " + round(mouseX) + " en y = " + round(mouseY),10,20);
+  afstand=dist(width / 2,height / 2,mouseX,mouseY);
+  fill('black');  
+  text("Beweeg de muis | x = " + round(mouseX) + " en y = " + round(mouseY) + " afstand = " + round(afstand),10,20);
   
-  if (mouseX >= width - 30 || mouseX <= 30 || mouseY >= height - 30 || mouseY <= 30 || mouseX >= 220 &&
-  mouseX <= 230 || mouseY >= 220 && mouseY <= 230) {
+  if (mouseX <= 30 || mouseX >= width - 30 || mouseY <= 30 || mouseY >= height - 30 || afstand <= 50 + 25 + 5) {
     kleur='red';
   }
   else {
     kleur='indianred';
   }
 
-  if (mouseX >= 225)
-  backgroundcolor = yellow
   ellipse(width / 2,height / 2,100);
   tekenJos(mouseX,mouseY,kleur);
-  afstand=dist(width / 2,height / 2,mouseX,mouseY);
-  text(afstand,10,40);
-  
 }
 
 function tekenJos(x,y,kleur) {
