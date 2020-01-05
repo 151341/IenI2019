@@ -11,11 +11,11 @@ function setup() {
 }
 
 function draw() {
-  if (mouseX >= 225) {
-    background = ('white');
+  if (mouseX <= width / 2) {
+    background('yellow');
   }
   else {
-    background = ('yellow');
+    background('white');
   }
   mouseX=constrain(mouseX,25,width - 25);
   mouseY=constrain(mouseY,25,height - 25);

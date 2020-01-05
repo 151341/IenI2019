@@ -7,7 +7,7 @@ function setup() {
   textFont("Verdana");
   textSize(14);
   noStroke();
-  frameRate(50);
+  frameRate(500);
 }
 
 function draw() {
