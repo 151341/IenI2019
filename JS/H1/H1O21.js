@@ -27,7 +27,7 @@ function draw() {
     fill('dodgerblue');
   }
   
-  if (mouseIsPressed == true) {
+  if (keyIsPressed == false) {
       diameter = 100;
   }
 
