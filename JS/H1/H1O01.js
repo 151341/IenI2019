@@ -1,3 +1,6 @@
+var blokX;
+var blokY;
+
 function setup() {
   canvas = createCanvas(850,450);
   background('grey');
@@ -6,17 +9,28 @@ function setup() {
 }
 
 function draw() {
-    background('orange');
-  if (mouseX >= width/2) {
+  if (blokX >= width/2) {
+   background('red');
+  }
+  else {
+    background('blue');
+  }
+
+    blokX = mouseX;
+    blokY = mouseY;
+    text('blokX ='+ round(blokX) + 'blokY ='+ round(blokY),20,20);
+ blokX = constrain(mouseX,0,800);
+ blokY = constrain(mouseY,0,400);
+
+
+  if (blokX >= width/2) {
     fill('blue');
   }
   else {
-fill('purple')
+fill('red')
     }
- rect(mouseX,mouseY,50,50);
+ rect(blokX,blokY,50,50);
  
- mouseX = constrain(mouseX,0,800);
- mouseY = constrain(mouseY,0,400);
 
- translate(mouseX,mouseY);
+ translate(blokX,blokY);
 }
