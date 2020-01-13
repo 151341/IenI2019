@@ -1,25 +1,22 @@
 function setup() {
-  canvas = createCanvas(450,450);
+  canvas = createCanvas(850,450);
   background('grey');
   canvas.parent('processing');
-  noLoop();
+
 }
 
 function draw() {
-  // groene cirkel zonder rand
-  
-  noStroke();
-  fill('green');
-  ellipse(225,225,400);
-  fill('white');
+    background('orange');
+  if (mouseX >= width/2) {
+    fill('blue');
+  }
+  else {
+fill('purple')
+    }
+ rect(mouseX,mouseY,50,50);
+ 
+ mouseX = constrain(mouseX,0,800);
+ mouseY = constrain(mouseY,0,400);
 
-  noStroke();
-  fill('white');
-  ellipse(225,225,300);
-  // witte rechthoek met rode rand
-  
-  stroke('red');
-  fill('white');
-  strokeWeight(10);
-  rect(125,125,200,200);
+ translate(mouseX,mouseY);
 }
