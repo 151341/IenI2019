@@ -1,4 +1,3 @@
-Toon Javascript-Code Terug naar Opgave
 function setup() {
   canvas = createCanvas(451,451);
   canvas.parent('processing');
