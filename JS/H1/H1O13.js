@@ -13,9 +13,6 @@ function draw() {
   fill('black');
   text("xJOS: " + round(xJOS) + " (mouseX:" + round(mouseX) + ")",10,20);
   text("yJOS: " + round(yJOS) + " (mouseY:" + round(mouseY) + ")",260,20);
-  
-  xJOS = constrain(mouseX,75,375);
-  yJOS = constrain(mouseY,75,375)
 
   translate(xJOS,yJOS);
 
@@ -40,5 +37,7 @@ function draw() {
   arc(0, 40, 80, 40, 0, PI, CHORD);
   pop();
   // einde tekenen JOS
-
+  
+  xJOS = constrain(mouseX,75,375);
+  yJOS = constrain(mouseY,75,375);
 }

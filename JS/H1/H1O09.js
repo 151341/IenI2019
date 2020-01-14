@@ -14,7 +14,7 @@ function draw() {
   background('orange');
   fill('yellow');
   textAlign(LEFT, TOP);
-  text("mouseX:" + round(mouseX) + "\mouseY:" + round(mouseY),mouseX,mouseY);
+  text('mouseX:'+ round(mouseX) + '\nmouseY:'+ round(mouseY),mouseX,mouseY);
   translate(50,50);
   fill('black');
   text("vensterGrootte:\n" + windowWidth + " x " + windowHeight,0,0);
@@ -22,7 +22,7 @@ function draw() {
   
   translate(500,0);
   fill('dodgerblue');
-  stroke('white');
+  stroke('red');
   strokeWeight(10);
   rect(0,0,400,200);
 

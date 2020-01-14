@@ -12,13 +12,13 @@ function draw() {
   //translate(125,0);
 
   for (var n = 0;n <= 5;n++) {
-    tekenHuis();
+    tekenHuis(n);
     tekenBoom(n);
-    translate(200,0);
+    translate(140,0)
   }
 }
 
-function tekenHuis() {
+function tekenHuis(x) {
   push();
   strokeWeight(4);
   stroke('darkgrey');

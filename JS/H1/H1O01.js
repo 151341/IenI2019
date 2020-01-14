@@ -30,7 +30,4 @@ function draw() {
 fill('red')
     }
  rect(blokX,blokY,50,50);
- 
-
- translate(blokX,blokY);
 }
